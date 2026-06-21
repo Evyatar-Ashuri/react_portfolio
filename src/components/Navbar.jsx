@@ -1,7 +1,6 @@
 import logo from "../assets/evyatar-logo.png";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import { SOCIAL_LINKS } from "../constants";
 
 const Navbar = () => {
     return (
@@ -11,14 +10,14 @@ const Navbar = () => {
                 <img className="mx-2" src={logo} alt="logo" style={{ width: "150px" }} />
                 </div>
                 <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-                    <a href="https://www.linkedin.com/in/evyatar-ashuri-469063237/" target="_blank" rel="noopener noreferrer">
+                    <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <FaLinkedin />
                     </a>
-                    <a href="https://github.com/Evyatarashuri" target="_blank" rel="noopener noreferrer">
+                    <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <FaGithub />
                     </a>
-                    <a href="https://www.instagram.com/evyatarashuri_/" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram />
+                    <a href={`mailto:${SOCIAL_LINKS.email}`} aria-label="Email">
+                        <FaEnvelope />
                     </a>
                 </div>
             </nav>

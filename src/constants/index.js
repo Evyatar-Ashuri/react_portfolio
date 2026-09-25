@@ -122,7 +122,7 @@ export const CONTACT = {
 };
 
 export const SOCIAL_LINKS = {
-  github: "https://github.com/Evyatarashuri",
+  github: "https://github.com/Evyatar-Ashuri",
   linkedin: "https://www.linkedin.com/in/evyatar-ashuri-469063237/",
   email: CONTACT.email,
 };
